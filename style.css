@@ -1,0 +1,129 @@
+:root{
+    --background:#000432;
+    --secondarybackground:#171c48;
+    --purple:#828dff;
+    --teal:#24feee;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: var(--background);
+    color: rgb(255, 255, 255);
+
+}
+.container{
+    max-width: 500px;
+    width: 90%; 
+    margin: auto;
+    margin-top: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.statscontainer{
+    display: flex;
+    gap: 30px;
+    padding: 20px;
+    border: 2px solid var(--purple);
+    border-radius: 20px;
+    margin-bottom: 20px;
+    width: 100%;
+    flex-shrink: 0;
+
+
+}
+.details{
+    width: 80%;
+}
+#progress{
+    height: 8px;
+    width: 100%;
+    background-color: #171c48;
+    border-radius: 20px;
+    margin-top: 20px;
+}
+#progressbar{
+    background-color: #24feee;
+    width: 0%;
+    height: 8px;
+    border-radius: 20px;
+}
+.num-con{
+    background-color: #828dff;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    flex-shrink: 0;
+}
+#number{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    font-size: 30px;
+    font-weight: bold;
+
+}
+form{
+    display: flex;
+    gap: 10px;
+    margin-top: 40px;
+}
+.taskname{
+    background-color: var(--secondarybackground);
+    width: 100%;
+    border: 1px solid var(--purple);
+    border-radius: 15px;
+    outline: none;
+    padding: 15px 15px;
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+}
+button{
+    background-color:var(--purple);
+    color: azure;
+    width: 55px;
+    border-radius: 50%;
+    border: none;
+    font-size: 40px;
+    flex-shrink: 0;
+    outline: none;
+    cursor: pointer;
+}
+#tasks{
+    margin: 20px 0;
+    margin-top: 40px;
+}
+.list-item{
+    list-style: none;
+    background-color: #171c48;
+    padding: 18px 20px ;
+    border-radius: 20px;
+    align-items: center;
+    margin: 10px 0;
+}
+.listli{
+    display: flex;
+    justify-content: space-between;
+}
+.liname{
+    display: flex;
+    align-items: center;
+}
+.liname input[type="checkbox"]{
+    width: 20px;
+    height: 20px;
+    outline: none;
+}
+.liname span{
+    font-size: 18px;
+    margin-left: 10px;
+}
+.list-item img{
+    width: 22px;
+    margin-left: 10px;
+    
+}
